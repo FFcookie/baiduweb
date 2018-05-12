@@ -1,0 +1,40 @@
+.name {
+	width: 10%;
+	float: left;
+}
+
+.sex {
+	width: 10%;
+	float: left;
+}
+
+.job {
+	width: 20%;
+	float: left;
+}
+
+h2 {
+	padding-top: 25px;
+	clear: both;
+}
+
+.phone {
+	width: 17%;
+	float: left;
+}
+
+.email {
+	width: 20%;
+	float: left;
+}
+
+.main {
+	float: left;
+}
+
+p {
+	margin-top: 5px;
+}
+* {
+	font-family:  KaiTi,"Trebuchet MS", Verdana, sans-serif;
+}
