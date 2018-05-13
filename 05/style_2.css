@@ -1,3 +1,15 @@
+h1 {
+	width: 20%;
+	height: 860px; 
+	background-color: #5CACEE;
+	color: #fff;
+	font-size: 40px;
+	text-align: center;
+	padding-top: 50px;
+	margin: 0 auto;
+	float: left;
+}
+
 .name {
 	width: 120px;
 	float: left;
@@ -40,10 +52,14 @@ p {
 	font-family: SimHei,"Trebuchet MS", Verdana, sans-serif;
 }
 
-h1 {
-	font-size: 40px;
+div {
+	font-size: 20px;
 }
 
-div {
-	font-size: 19px;
+.body {
+	float: left;
+	padding-left: 20px;
+}
+.main {
+	clear: both;
 }

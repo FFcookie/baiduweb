@@ -1,0 +1,84 @@
+body {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h1 {
+    background-color: 	#8A8A8A;
+    color: #fff;
+    padding: 24px;
+    margin: 0;
+}
+
+.name {
+	width: 120px;
+	float: left;
+}
+
+.sex {
+	width: 120px;
+	float: left;
+}
+
+.job {
+	float: left;
+}
+
+h2 {
+	padding: 50px 30px;
+	font-size: 27px;
+	background-color: #CCC; 
+	border-bottom: 1px solid #fff;
+	margin: 0;
+	float: left;
+	width: 116px;
+}
+
+.phone {
+	width: 220px;
+	float: left;
+}
+
+.email {
+	width: 280px;
+	float: left;
+}
+
+.personal {
+	float: left;
+}
+
+p {
+	margin-top: 0;
+	width: 700px;
+}
+
+* {
+	font-family: SimHei,"Trebuchet MS", Verdana, sans-serif;
+}
+
+div {
+    font-size: 19px;
+}
+
+.position {
+    float: left;
+    padding-top: 3ps;
+}
+
+.text {
+    float: left;
+    padding-left: 20px;
+    padding-top: 20px;
+    width: 803px;
+    height: 111px;
+    margin: 0;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+p {
+	float: left;
+}
+
