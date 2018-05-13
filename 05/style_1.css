@@ -1,40 +1,52 @@
 .name {
-	width: 10%;
+	width: 120px;
 	float: left;
 }
 
 .sex {
-	width: 10%;
+	width: 120px;
 	float: left;
 }
 
 .job {
-	width: 20%;
+	width: 200px;
 	float: left;
 }
 
 h2 {
 	padding-top: 25px;
 	clear: both;
+	font-size: 27px;
 }
 
 .phone {
-	width: 17%;
+	width: 180px;
 	float: left;
 }
 
 .email {
-	width: 20%;
+	width: 200px;
 	float: left;
 }
 
 .main {
+	padding-left: 20px;
+	width: 180px;
 	float: left;
 }
 
 p {
 	margin-top: 5px;
 }
+
 * {
 	font-family:  KaiTi,"Trebuchet MS", Verdana, sans-serif;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+div {
+	font-size: 19px;
 }
