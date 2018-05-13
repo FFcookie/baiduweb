@@ -9,7 +9,6 @@
 }
 
 .job {
-	width: 200px;
 	float: left;
 }
 
@@ -20,18 +19,16 @@ h2 {
 }
 
 .phone {
-	width: 180px;
+	width: 220px;
 	float: left;
 }
 
 .email {
-	width: 200px;
+	width: 280px;
 	float: left;
 }
 
 .main {
-	padding-left: 20px;
-	width: 180px;
 	float: left;
 }
 
