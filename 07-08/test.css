@@ -1,0 +1,269 @@
+body {
+	margin: 0;
+}
+
+.one {
+	width: 100%;
+}
+
+.one #left {
+	float: left;
+	width: 30%;
+	background-color: lightblue;
+}
+
+.one #right {
+	float: right;
+	width: 70%;
+	background-color: lightgreen;
+}
+
+.two {
+	width:100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.two #left{
+	background-color: pink;
+	flex: 3;
+}
+
+.two #right{
+	background-color: gray;
+	flex: 7;
+}
+/*双float*/
+.three #left{
+	float: left;
+	width: 200px;
+	background-color: yellow;
+}
+
+.three #right{
+	float: left;
+	width: calc(100% - 200px);
+	background-color: coral;
+}
+
+/*flex*/
+.four {
+	clear: both;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.four #left {
+	width: 200px;
+	background-color: cornsilk;
+}
+
+.four #right {
+	flex: 1;
+	background-color: gold;
+}
+/*float+margin-left*/
+.five {
+	overflow: hidden;
+}
+
+.five #left {
+	float: left;
+	width: 200px;
+	background-color: lightcyan;
+}
+
+.five #right {
+	margin-left: 200px;
+	background-color: yellowgreen;
+}
+/*absolute+margin-left*/
+.six {
+	overflow: hidden;
+}
+
+.six #left {
+	position: absolute;
+	background-color: pink;
+	width: 200px;
+}
+
+.six #right {
+	margin-left: 200px;
+	background-color: lightgray;
+}
+/*float+BFC*/
+.seven {
+	overflow: auto;
+}
+
+.seven #left {
+	float: left;
+	margin-right: 0;
+	background-color: gold;
+	width: 200px;
+}
+
+.seven #right {
+	margin-left: 200px;
+	overflow: auto;
+	background-color: orange;
+}
+
+/* 双inline-block*/
+
+.eight {
+	overflow: hidden;
+	box-sizing: content-box;
+	font-size: 0;
+}
+
+.eight #left,
+.eight #right {
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+	font-size: 18px;
+}
+
+.eight #right {
+	width: 200px;
+	background-color: papayawhip;
+}
+
+.eight #left {
+	width: calc(100% - 200px);
+	background-color: lightyellow;
+}
+
+/*圣杯布局*/
+
+.nine {
+	overflow: hidden;
+	padding-left: 200px;
+	padding-right: 150px;
+    background-color: lightblue;
+}
+
+.nine p {
+	margin: 0;
+}
+
+.nine #left {
+	width: 200px;
+	margin-left: -100%;
+	background-color: lightgreen;
+	position: relative;
+	right: 200px;
+}
+
+.nine #middle {
+	width: 100%;
+	background-color: lightgray;
+}
+
+.nine #right {
+	width: 150px;
+	background-color: orange;
+	margin-left: -150px;
+	position: relative;
+	right: -150px;
+}
+
+.nine #left,
+.nine #middle,
+.nine #right {
+	float: left;
+	height: 50px;
+}
+
+/* 双飞翼 */
+
+.ten {
+	clear: both;
+}
+
+.ten #left,
+.ten div,
+.ten #right {
+	float: left;
+	margin: 0;
+	height: 50px;
+}
+
+.ten #left {
+	width: 200px;
+	background: pink;
+	margin-left: -100%;
+}
+
+.ten div {
+	width: 100%;
+	background: red;
+}
+
+.ten #middle {
+	margin: 0 150px 0 200px;
+	height: 50px;
+	background: yellow;
+}
+
+.ten #right {
+	width: 150px;
+	background: lightblue;
+	margin-left: -150px;
+}
+
+/* FLEX */
+.eleven {
+	clear: both;
+	display: flex;
+	flex-direction: row;
+}
+
+.eleven #left {
+	order: -1;
+	width: 200px;
+    background-color: yellowgreen;
+}
+
+.eleven #middle {
+    flex: 1;
+	background-color: orangered;
+}
+
+.eleven #right {
+    width: 150px;
+	background-color: lightcyan;
+}
+
+/*绝对定位*/
+
+.tweleve {
+	clear: both;
+}
+
+.tweleve #middle {
+	margin: 0 150px 0 200px;
+	background-color: cyan;
+}
+
+.tweleve #left,
+.tweleve #right {
+	top: 568px;
+	position: absolute;
+}
+
+.tweleve #left {
+	left: 0;
+	width: 200px;
+	background-color: lightgray;
+}
+
+.tweleve #right {
+	right: 0;
+	width: 150px;
+	background-color: lightyellow;
+}
+
