@@ -1,0 +1,177 @@
+@font-face {
+	font-family: 'SectorLight';
+	src: url('font/SectorLight.ttf');
+}
+
+html {
+	font-family: 'SectorLight';
+}
+
+.head1 {
+	color: #eee;
+}
+
+.head1 h1 {
+    font-size: 62px;
+	text-align: center;
+}
+
+.head1 article p {
+	font-size: 20px;
+	text-align: center;
+	opacity: 0.7;
+}
+
+.head1 div div {
+	text-align: center;
+}
+
+.head1 div div p:nth-of-type(1) {
+	font-size: 16px;
+}
+
+.head1 div div p:nth-of-type(2) {
+	font-size: 12px;
+	color: rgba(255, 255, 255, .3);
+}
+
+.signup form input:nth-of-type(2) {
+	font-size: 12px;
+	color: rgba(255, 255, 255, .3);
+} 
+
+/* 2 part */
+.head2 {
+	font-size: 0;
+}
+
+.head2 h5 {
+    font-size: 14px;
+}
+
+.head2 h1 {
+	font-size: 42px;
+}
+
+.head2 h3 {
+	font-size: 20px;
+}
+
+.head2 p {
+	font-size: 16px;
+	color: rgba(20, 20, 20, .7);
+}
+
+/* 3 part */
+
+.head3 {
+	color: #fff;
+}
+
+.head3 .left h2 {
+	font-size: 42px;
+}
+
+.head3 .left p {
+	font-size: 18px;
+	color: rgba(255, 255, 255, .7);
+}
+
+.head3 .left button {
+	font-size: 12px;
+}
+
+.head3 .left button:nth-of-type(2) {
+	color: #fff;
+}
+
+/* 4 part */
+
+.head4 .content h1 {
+	font-size: 42px;
+}
+
+.head4 .content p {
+	font-size: 16px;
+	color: rgba(20, 20, 20, .7);
+}
+
+/* 5part */
+.head5 h3 {
+	font-size: 20px;
+}
+
+.head5 p {
+	font-size: 16px;
+	color: rgba(20, 20, 20, .7);
+}
+
+/* 6part */
+.head6 h2 {
+	font-size: 42px;
+}
+
+.head6 p {
+	font-size: 18px;
+	color: rgba(20, 20, 20, .7);
+}
+
+.head6 p {
+	font-size: 18px;
+	color: rgba(20, 20, 20, .7);
+}
+
+.head6 .illustration p {
+	font-size: 12px;
+	color: rgba(255, 255, 255, .4);
+}
+
+.head6 .illustration h3 {
+	font-size: 20px;
+	color: #fff;
+}
+
+/* 7part */
+.head7 h4 {
+	font-size: 16px;
+}
+
+.head7 .left form input,
+.head7 .left form textarea {
+	font-size: 14px;
+	color: rgba(20, 20, 20, .5);
+}
+
+.head7 .left form input:nth-of-type(3) {
+	font-size: 12px;
+	color: #fff;
+}
+
+.head7 .content .right li {
+	font-size: 16px;
+}
+
+.head7 .content .right p {
+	font-size: 16px;
+	color: rgba(20, 20, 20, .7);
+}
+
+.head7 .content .right h2 {
+	font-size: 42px;
+}
+
+/*footer*/
+footer a {
+	font-size: 16px;
+	color: rgba(255, 255, 255, .3);
+}
+
+footer p {
+	font-size: 18px;
+	color: rgba(255, 255, 255, .4)
+}
+
+footer .first {
+	font-size: 14px;
+	color: #fff;
+}
