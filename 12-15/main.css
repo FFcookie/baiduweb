@@ -455,9 +455,10 @@ header .bottom img:nth-of-type(1) {
 }
 
 .content-main-all .right .top p {
-    min-width: 42px;
+    min-width: 41px;
     line-height: 13px;
     margin: 27px 0 0 21px;
+    white-space:nowrap; 
 }
 
 .content-main-all .right .top hr {
