@@ -29,7 +29,8 @@ header {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	flex: 0 100px;
+	flex: 0;
+    min-width: 100px;
 	min-height: 100%;
 	background-color: #1d2531;
 }
