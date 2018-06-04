@@ -362,11 +362,15 @@ hr {
 	position: relative;
 	bottom: 345px;
 	Z-index: 1;
-	display: none;
+	opacity: 0;
+	transition: opacity 0.8s ease;
+	-webkit-transition: opacity 0.8s ease;
+    -moz-transition: opacity 0.8s ease;
+    -o-transition: opacity 0.8s ease; 
 }
 
 .head6 .illustration .teacher:hover .hover {
-	display: block;
+	opacity: 1;
 }
 
 /* 7part */

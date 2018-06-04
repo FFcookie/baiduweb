@@ -131,6 +131,10 @@ html {
 	color: #fff;
 }
 
+.head6 a {
+	text-decoration: none;
+}
+
 /* 7part */
 .head7 h4 {
 	font-size: 16px;
