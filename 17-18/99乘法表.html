@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>99乘法表</title>
+    <style>
+            table td {
+                border: 1px solid black;
+            }
+            table {
+                border-collapse: collapse;
+            }
+    </style>
+</head>
+<body>
+    <table></table>
+    <script>
+            var tab = "";
+            //得到输入的行和列的值
+            for(var i=1; i<=9; i++)
+            {
+                tab += "<tr>";
+                for(var j=1; j<=9; j++){
+                    if (j <= i){
+                    tab = tab + "<td>" + j + '*' + i + '=' + (j * i) + "</td>";
+                }
+                }
+                tab += "</tr>";
+            }
+            tab += "</table>";
+            var table = document.querySelector("table");
+            table.innerHTML = tab;
+    </script>
+</body>
+</html>
