@@ -28,11 +28,7 @@
                 var y = cc + "px";
                 a.style.backgroundPositionY= y; 
                 var j = parseInt(i/16) % 2;
-                if (j === 0) {
-                cc = cc - 480;
-                }else {
-                cc = cc + 480;
-                }
+                cc = cc + (j === 0? -480:480);
                 i++;
         }
         var stop = setInterval(haha, 100);
