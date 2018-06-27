@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <title>IFE ECMAScript</title>
+    <style>
+        select {
+            display: none;
+        }
+        .palette {
+            margin: 0;
+            margin-top: 30px;
+            padding: 0;
+            list-style: none;
+        }
+        .palette li {
+            width: 40px;
+            height: 40px;
+            border: 1px solid #000;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div style = "margin-bottom: 20px">
+        <input id="name" type="text">
+        <button id="submit-btn">Submit</button>
+    </div>
+
+    <label>
+        <input id="school" name="status" type="radio">
+        School
+    </label>
+    <label>
+        <input id="company" name="status" type="radio">
+        Company
+    </label>
+
+    <select id="school-select">        
+        <option>北京邮电大学</option>
+        <option>黑龙江大学</option>
+        <option>华中科技大学</option>
+    </select>
+
+    <select id="company-select">        
+        <option>百度</option>
+        <option>爱奇艺</option>
+    </select>
+
+    <ul class="palette">
+        <li style="background-color:crimson"></li>
+        <li style="background-color:bisque"></li>
+        <li style="background-color:blueviolet"></li>
+        <li style="background-color:coral"></li>
+        <li style="background-color:chartreuse"></li>
+        <li style="background-color:darkolivegreen"></li>
+        <li style="background-color:cyan"></li>
+        <li style="background-color:#194738"></li>        
+    </ul>
+
+    <p class="color-picker"></p>
+    <script>
+        window.onload = function() {
+            var dv = document.querySelector("div");
+            var btn = document.querySelector("#submit-btn");
+            var content = document.querySelector("#name");
+            dv.onclick = function(event) {
+                var event = event || window.event;
+                var target = event.target || event.srcElement;
+                if(target.nodeName.toLowerCase() === 'button'){
+                    console.log (content.value);
+                    content.value = '';
+                }
+            }
+            content.onkeydown = function(event) {
+            switch(event.keyCode){
+                case 13:
+                    console.log(content.value);
+                    content.value = '';
+                    break;
+                case 27:
+                    content.value = '';
+                    break;
+                }
+        }
+        }
+
+        window.onload = function() {
+            var sc = document.querySelector("#school");
+            var scse = document.querySelector("#school-select");
+            var cp = document.querySelector("#company");
+            var cpse = document.querySelector("#company-select");
+            sc.onclick = function () {
+                scse.style.display = "block";
+                cpse.style.display = "none";
+            }
+            cp.onclick = function () {
+                cpse.style.display = "block";
+                scse.style.display = "none";
+            }
+        }
+        
+        window.onload = function () {
+            var ul = document.querySelector(".palette");
+            ul.onclick = function(event) {
+                var ev = event || window.event;
+                var target = ev.target || ev.srcElement;
+                var c = target.style.backgroundColor;
+                var p = document.querySelector(".color-picker");
+                p.innerHTML = c;
+                p.style.color = c;
+            }
+        }
+        
+
+    </script>
+</body>
+</html>
