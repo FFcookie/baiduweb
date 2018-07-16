@@ -60,7 +60,7 @@
 
     <p class="color-picker"></p>
     <script>
-        window.onload = function() {
+        
             var dv = document.querySelector("div");
             var btn = document.querySelector("#submit-btn");
             var content = document.querySelector("#name");
@@ -71,7 +71,7 @@
                     console.log (content.value);
                     content.value = '';
                 }
-            }
+
             content.onkeydown = function(event) {
             switch(event.keyCode){
                 case 13:
@@ -85,7 +85,7 @@
         }
         }
 
-        window.onload = function() {
+ 
             var sc = document.querySelector("#school");
             var scse = document.querySelector("#school-select");
             var cp = document.querySelector("#company");
@@ -98,9 +98,9 @@
                 cpse.style.display = "block";
                 scse.style.display = "none";
             }
-        }
+
         
-        window.onload = function () {
+
             var ul = document.querySelector(".palette");
             ul.onclick = function(event) {
                 var ev = event || window.event;
@@ -110,8 +110,7 @@
                 p.innerHTML = c;
                 p.style.color = c;
             }
-        }
-        
+
 
     </script>
 </body>
