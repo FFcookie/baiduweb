@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "utf-8">
+    <title>对象转换数组</title>
+</head>
+<body>
+    <script>
+        var scoreObject = {
+            "Tony": {
+                "Math": 95,
+                "English": 79,
+                "Music": 68
+            },
+            "Simon": {
+                "Math": 100,
+                "English": 95,
+                "Music": 98
+            }, 
+            "Annie": {
+                "Math": 54,
+                "English": 65,
+                "Music": 88
+            }
+        }
+
+        var a = [];
+        var b = [];
+        var c = [];
+        var n = 0;
+        for (i in scoreObject) {
+            a.push(scoreObject[i]);
+            b.push(i);
+        }
+
+        while(n < a.length) {
+            var d = [];
+            for (i in a[n]) {
+                d.push(a[n][i]);
+            }
+            d.unshift(b[n]);
+            c[n] = d;
+            n++;
+        }
+        console.log(c);
+    </script>
+</body>
+</html>
