@@ -16,6 +16,18 @@
                 [7, "Area1-2-3", 4],
                 [8, "Area2-2-1", 6],
             ];
+        
+        var menuObj = {};
+        var i = 0;
+        var j = 0;
+        for (var i = 0; i < menuArr.length-1;i++) {
+            menuObj[menuArr[i][0]] = {};
+            menuObj[menuArr[i][0]].name = menuArr[i][1];
+        }
+        console.log(menuObj);
+
+
+        
     </script>
 </body>
 </html>

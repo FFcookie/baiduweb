@@ -24,25 +24,19 @@
             }
         }
 
-        var a = [];
-        var b = [];
-        var c = [];
-        var n = 0;
-        for (i in scoreObject) {
-            a.push(scoreObject[i]);
-            b.push(i);
-        }
-
-        while(n < a.length) {
-            var d = [];
-            for (i in a[n]) {
-                d.push(a[n][i]);
+        function objToArr (obj) {  
+            var scoreArr = [];
+            for ( i in obj) {
+                var arr = [];
+                arr.push(i);
+                for ( j in obj[i]) {
+                    arr.push(obj[i][j]);
+                } 
+                scoreArr.push(arr);
             }
-            d.unshift(b[n]);
-            c[n] = d;
-            n++;
+            console.log(scoreArr);
         }
-        console.log(c);
+        objToArr(scoreObject);
     </script>
 </body>
 </html>
